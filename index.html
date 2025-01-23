@@ -1,0 +1,75 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <link rel="stylesheet" href="style.css" >
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>multimedia webpage</title>
+</head>
+<body>
+    <header>
+        <h1>Multimedia and Registration Page</h1>
+    </header>
+
+    <main>
+        <!-- Multimedia Section -->
+        <section>
+            <h2>Enjoy Our Multimedia Content</h2>
+
+            <!-- Audio Element -->
+            <h3>Listen to Our Audio</h3>
+            <audio controls>
+                <source src="audio1.mp3" type="audio/mpeg">
+                Your browser does not support the audio element.
+            </audio>
+
+            <!-- Video Element -->
+            <h3>Watch Our Video</h3>
+            <video controls poster="sdaImage.jpg">
+                <source src="video1.mp4" type="video/mp4">
+                Your browser does not support the video element.
+            </video>
+        </section>
+
+        <!-- Registration Form Section -->
+        <section>
+            <h2>Register Here</h2>
+            <form action="/submit-form" method="POST">
+                <!-- Full Name -->
+                <label for="fullname">Full Name:</label>
+                <input type="text" id="fullname" name="fullname" required maxlength="50">
+
+                <!-- Email Address -->
+                <label for="email">Email:</label>
+                <input type="email" id="email" name="email" required>
+
+                <!-- Password -->
+                <label for="password">Password:</label>
+                <input type="password" id="password" name="password" required minlength="8">
+
+                <!-- Age -->
+                <label for="age">Age:</label>
+                <input type="number" id="age" name="age" min="18" required>
+
+                <!-- Gender -->
+                <label>Gender:</label>
+                <input type="radio" id="male" name="gender" value="Male">
+                <label for="male">Male</label>
+                <input type="radio" id="female" name="gender" value="Female">
+                <label for="female">Female</label>
+                <input type="radio" id="other" name="gender" value="Other">
+                <label for="other">Other</label>
+
+                <!-- Terms and Conditions -->
+                <label>
+                    <input type="checkbox" id="terms" name="terms" required>
+                    I agree to the Terms and Conditions
+                </label>
+
+                <!-- Submit Button -->
+                <button type="submit">Register</button>
+            </form>
+        </section>
+    </main>
+</body>
+</html>
